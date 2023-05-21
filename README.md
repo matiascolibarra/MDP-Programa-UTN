@@ -1,2 +1,2 @@
-# Laboratorio02
+# Laboratorio
 Cursos HTML-CSS
