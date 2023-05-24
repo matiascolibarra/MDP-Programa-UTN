@@ -1,0 +1,117 @@
+
+
+*{
+    font-family: 'Pangolin','Source-Sans-Pro';
+}
+
+:root{
+    --title:'Pangolin';
+    --subtitle:'Source-Sans-Pro'
+    --color-primary: #cecece;
+    --color-secondary:hsl(173, 54%, 33%);
+    --size-x1:'30px';
+    --size-s:'10px';
+    --size-m:'20px';
+    --color-active:orange;
+}
+
+.title{
+    font-family:var(--title);
+    font-size: var(--size-1x);
+    font-
+}
+
+.subtitle{
+    font-family:var(--subtitle);
+    font-size: var(--size-m);
+}
+
+button{
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+
+.btn{
+    --color-default:yellow;
+    background-color: var(--color-active, var(--color-default));
+}
+
+header{
+    width: 100vw;
+    background-color: var(--color-active);
+}
+
+aside{
+    width:25%;
+    background-color: var(--color-secondary);
+}
+
+main{ width:25%;
+    background-color: var(--color-secondary);
+    width: 75%;
+
+}
+footer{
+    width:100vw;
+    background-color: var(--color-secondary);
+}
+
+#menu{
+    margin: auto;
+    padding-left: 20px ;
+    padding-top: 5px ;
+    width: 320px;
+}
+#menu ul, #menuv ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#menu ul li{
+    display: inline-block;
+
+    padding-left:10px;
+    padding-right:10px;
+    border-right: 1px solid;
+    float:
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #cecece;
+    font-weight: bold;
+    float: left;
+}
+
+#menu ul li a:hover, #menuv ul li a:hover{
+    color:black;
+}
+
+
+.menuv{
+    width: 150vh;
+    height:100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menuv ul li a{
+    width: 250px;
+    height:35px;
+    box-shadow: 2px 2px  2px blue;
+    margin: 5px;
+    padding:5px;
+    background-color:#000000;
+    border-radius:10px;
+
+}
+
+.menu ul li{
+    padding:12px;
+}
