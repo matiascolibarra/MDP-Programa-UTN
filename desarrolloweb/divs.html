@@ -10,7 +10,7 @@
 
 <!--Utilizamos div/header/nav/section/article/footer/class
      para dar ordenar y dar forma a una pagina web-->
-     <!--Accesibilidad: agrego role a cada elemento para
+<!--Accesibilidad: agrego role a cada elemento para
          facilitar su accesibilidad a todo publica-->
 
 <body>
@@ -40,7 +40,7 @@
                     <h3>HTML5</h3>
                     <img src="../img/html5.png" height="200">
                     <a href="programa-html5.pdf" download>Descargar Programa</a>
-                    
+
                     <p>Ventajas de este curso</p>
                     <!--Lista no ordenadas-->
                     <ul>
@@ -82,7 +82,7 @@
                 </div>
                 <div>
                     <h3>CSS3</h3>
-                    <img src="../img/css3.png" height="200">   
+                    <img src="../img/css3.png" height="200">
                 </div>
                 <div>
                     <h3>JavaScript</h3>
@@ -100,19 +100,45 @@
             </section>
         </main>
         <aside role="complementary">
-            <h2>Proximos cursos</h2>
-            <div>
-                <h3>PHP</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ipsa, ex cupiditate eaque nam
-                    veritatis ab quisquam, repudiandae sit maiores possimus corrupti! Tenetur aliquid dolor
-                    necessitatibus tempore cum nulla ducimus.</p>
-            </div>
-            <div>
-                <h3>MySql</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officiis rerum dolorem necessitatibus,
-                    aperiam ad aut enim accusantium molestiae iusto ut magni obcaecati sapiente! Suscipit, accusamus a?
-                    Quod, illo nihil!</p>
-            </div>
+
+            <table width="300">
+                <caption>
+                    <h2>Proximos cursos</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center">No te lo puedes perder!</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">PHP</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>$99 (Sabatino)</td>
+                    </tr>
+                    <tr>
+                        <td>MySql</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>$99</td>
+                    </tr>
+                </tbody>
+            </table>
         </aside>
     </div>
     <footer role="contentinfo">
