@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web con HTML5</title>
+</head>
+
+<!--Utilizamos div/header/nav/section/article/footer/class
+     para dar ordenar y dar forma a una pagina web-->
+<!--Accesibilidad: agrego role a cada elemento para
+         facilitar su accesibilidad a todo publica-->
+
+<body>
+    <div class="contenedor">
+        <header roler="banner">
+            <div class="logo">
+                <img src="../img/logo.png" alt="logo empresa">
+            </div>
+            <nav class="navegacion" role="navigation">
+                <ul>
+                    <!--Enlace a un archivo interno-->
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <!--(#) Sirve para simular que el enlace funciona-->
+                    <li><a href="#">Cursos</a></li>
+                    <!--Enlace a una pagina externa,
+                     target blank sirve para abrir una nueva pestaña al presionar-->
+                    <li><a href="https://google.com" target="_blank">Ir a Google</a></li>
+                    <!--Enlace dentro de una pagina mendiante id-->
+                    <li><a href="#noticias">Ir a noticias</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="Contenido-principal" role="main">
+            <section>
+                <h2>Nuestros cursos</h2>
+                <div>
+                    <h3>HTML5</h3>
+                    <img src="../img/html5.png" height="200">
+                    <a href="programa-html5.pdf" download>Descargar Programa</a>
+
+                    <p>Ventajas de este curso</p>
+                    <!--Lista no ordenadas-->
+                    <ul>
+                        <li>Lo puedes tomar en linea</li>
+                        <!--Listas anidadas-->
+                        <ul>
+                            <li>En Udemy</li>
+                            <li>A cualquier hora del dia</li>
+                        </ul>
+                        <li>Avanzar a tu ritmo</li>
+                        <li>Puedes preguntar tus dudas al instructor</li>
+                    </ul>
+
+                    <p>Temario del curso:</p>
+                    <!--Listas Ordenadas-->
+                    <ol>
+                        <li>Basico de HTML</li>
+                        <li>Etiquetas de HTML </li>
+                        <!--Listas anidadas-->
+                        <ol>
+                            <li>Elementos Semanticos</li>
+                            <li>header</li>
+                        </ol>
+                        <li>Crear Enlaces</li>
+                        <li>Crea Listas</li>
+                    </ol>
+
+                    <p>Lo que debes aprender para ser desarrollador web</p>
+                    <!--Listas de definicion-->
+                    <!--Sirve para un termino y su descripcion-->
+                    <dl>
+                        <dt>HTML5</dt>
+                        <dd>Agrega estructura a tus desarrollos</dd>
+                        <dt>CSS3</dt>
+                        <dd>Agrega presentacion a tus desarrollos</dd>
+                        <dt>JavaScript</dt>
+                        <dd>Agrega inteligencia a tus desarrollos</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h3>CSS3</h3>
+                    <img src="../img/css3.png" height="200">
+                </div>
+                <div>
+                    <h3>JavaScript</h3>
+                    <img src="../img/js.jpg" height="200">
+                </div>
+            </section>
+            <section id="noticias">
+                <h2>Ultimas Noticias</h2>
+                <article role="article">
+                    <h3>Aprender a programar en el siglo 21</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quisquam necessitatibus quos
+                        odit, excepturi voluptates reprehenderit sequi natus nesciunt animi assumenda nostrum cum neque
+                        mollitia sapiente accusamus culpa modi similique.</p>
+                </article>
+            </section>
+        </main>
+        <aside role="complementary">
+
+            <table width="300">
+                <caption>
+                    <h2>Proximos cursos</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center">No te lo puedes perder!</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">PHP</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>$99 (Sabatino)</td>
+                    </tr>
+                    <tr>
+                        <td>MySql</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>$99</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>$99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+    </div>
+    <footer role="contentinfo">
+        <div class="nosotros">
+            <h3>Sobre nuestra escuela</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti perspiciatis in assumenda eaque vitae.
+                Commodi tempora possimus consequatur aperiam incidunt debitis dolorum hic consectetur, aspernatur nam,
+                nesciunt reiciendis odit non.</p>
+        </div>
+        <div class="menu">
+            <nav class="navegacion" role="navigation">
+                menu aqui
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
