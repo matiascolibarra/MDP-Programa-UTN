@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+header{
+    background-color: rgb(197, 193, 193);
+    width:100%;
+    height: 50px;
+}
+
+header nav ul li{
+    list-style-type: none;
+    float: left;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    color:black;
+    display: inline-block;
+}
+header nav ul li a:hover{
+    color:white;
+    background-color: black;
+}
+
+body{
+    background-color: rgb(31, 23, 101);
+}
+main{
+    background-color: white;
+    width: 70%;
+    float:left;
+    padding: 10px;
+}
+main img{
+    max-width: 100%;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main section{
+    padding:30px;
+}
+main section p{
+    text-align: justify;
+    margin-bottom: 16px;
+    line-height: 200%;
+}
+main section h1{
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+aside{
+    width: 30%;
+    float:left;
+    padding: 30px;
+    background-color: aqua;
+}
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+aside ul li:hover{
+    color: orange;
+}
+aside h2{
+ margin-bottom: 16px;
+}
+footer{
+    width: 70%;
+    background-color: #e52;
+    clear: both;
+    padding: 20%;
+}
+
+article img{
+    float:left;
+    width: 50%;
+}
+.datos-productos{
+    float: right;
+    padding: 20px;
+    width: 70%;
+    box-sizing: border-box;
+}
+.nombre, .precio{
+    float: right;
+    font-weight: bold;
+}
+.precio{
+    color: red;
+    margin: 5px 0px;
+}
+
+.color li{
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+.blue{
+    background-color: blue;
+}
+.marron{
+    background-color: maroon;
+}
+yellow{
+    background-color: yellow;
+}
+article{
+    background-color: white;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/*
+header{
+    padding: 5px;
+    width:100px;
+    border: 2px solid blue;
+    box-sizing: content-box;
+
+}*/
+
