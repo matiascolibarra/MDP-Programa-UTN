@@ -35,3 +35,7 @@ div b{
     color:aquamarine;
     
 }
+header div img{
+    float:left;
+    width: 50%;
+}
