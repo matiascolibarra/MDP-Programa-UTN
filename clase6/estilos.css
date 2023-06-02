@@ -1,0 +1,22 @@
+
+/*Cambia el color del titulo a un tono de rojo mas claro al pasar el cursos por encima*/
+
+h1:hover{
+    color:#ff5555;
+    padding:10px;
+}
+
+
+p:first-child{
+    color: blue;
+}
+
+
+/*
+p.destacado:hover{
+
+}*/
+
+
+
+
