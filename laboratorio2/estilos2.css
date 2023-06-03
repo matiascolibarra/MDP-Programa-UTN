@@ -2,3 +2,203 @@
 font-family: 'Playfair Display', serif;
 */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display';
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    margin: 0px;
+}
+
+header img{
+    max-width: 240px;
+    float: left;
+}
+header nav{
+    font-family: 'Nanum Myeongjo';
+}
+
+.menuHeader{
+    margin: 0;
+    padding: 0;
+
+    
+}
+.menuHeader ul{
+    list-style:none;
+    display: flex;
+
+}
+.menuHeader li{
+    float: left;
+    margin-top: 80px;
+}
+.menuHeader li a{
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color:  white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.menuHeader li a:hover{
+    color: white;
+    background-color: rgb(85, 83, 79);
+}
+
+main{
+    clear: both;
+    width: 70%;
+    background-color:  #7557fa;
+    float: left;
+    height: 100vh;
+    overflow-y: auto;
+    height: 700px;
+}
+section{
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify-around;
+}
+section .card-product{
+    max-width: 30%;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    
+    /*padding-top:10px;*/
+}
+section .card-product img{
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 2px solid rgb(33, 16, 166);
+}
+section .card-product .description{
+    text-align: center;
+    line-height: 200%;
+    font-family: 'Nanum Myeongjo';
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+section .card-product .precio{
+    text-align: right;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+section .card-product-footer{
+    width: 100%;
+    background-color: rgb(0, 38, 255);
+    height: 40px;
+    border-radius: 0px 0px 18px 18px;
+}
+section .card-product-footer button{
+    width: 50%;
+    float: left;
+    height: 40px;
+    background-color: rgb(0, 38, 255);
+    color: white;
+    border-radius: 0px 0px 18px 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/**/
+
+/**/
+
+aside{
+    width: 30%;
+    background-color:  #ffffff;
+    padding: 20px;
+    float: right;
+    height: 108vh;
+}
+aside section nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside section nav li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(19, 14, 184);
+}
+aside section nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: black;
+}
+aside section li:hover{
+    border-bottom: 1px solid rgb(210, 70, 70);
+    color: rgb(80, 23, 202);
+}
+
+aside .form{
+    width: 100%;
+    border: 3px solid rgb(80, 59, 174);
+    border-radius: 10px;
+    padding: 5px;
+}
+aside .form h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+aside .form input, aside .form textarea{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+aside .form textarea{
+    height: 100px !important;
+    resize: none;
+}
+aside .form button{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(41, 47, 156);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer{
+    clear: both;
+    padding: 60px;
+    background-color:  #d8d8dae7;
+    color: rgb(51, 51, 51);
+}
+footer div{
+    width: 50%;
+}
+footer .one{
+    float: left;
+}
+footer .two{
+    float: right;
+    text-align: right;
+}
+footer .two a{
+    color: rgb(39, 38, 38);
+    text-decoration: none;
+    padding-right: 10px4;
+}
