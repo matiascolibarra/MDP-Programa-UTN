@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: orange;
+}
+
+main{
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
+}
+.calculadora h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.calculadora input{
+    margin: 10px;
+}
+.calculadora{
+    width: 30%;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,223 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: rgb(116, 228, 163);
+  width: 100%;
+  height: 160px;
+  margin: 0px;
+}
+
+.menuHeader ul{
+  list-style: none;
+}
+.menuHeader li{
+  float: left;
+  margin-top: 30px;
+}
+.menuHeader li a{
+  text-decoration: none;
+  padding: 40px;
+  display: inline-block;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.menuHeader li a:hover{
+  background-color: rgb(16, 207, 70);
+  color: white;
+  font-size: 22px;
+}
+
+
+
+/* MAIN */
+main{
+  clear: both;
+  width: 65%;
+  float: left;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: blue;
+  color: white;
+  overflow-y: auto;
+  height: 700px;
+}
+section{
+  padding: 20px;
+}
+section .text{
+  max-width: 80%;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+section .text .descripcion{
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ASIDE */
+
+
+aside {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  float: right;
+  height: 100vh;
+}
+aside section nav u{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INPUTS */
+
+.input {
+    max-width: 190px;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  div .input-group{
+    justify-content: center;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+
+
+  /* BOTONES */
+
+  button {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
+  
+
+
+  /* FOOTER */
+
+
+  footer{
+    clear: both;
+    background-color: red ;
+    padding: 60px;
+    color: white;
+  }
