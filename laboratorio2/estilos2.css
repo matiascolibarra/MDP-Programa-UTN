@@ -14,7 +14,7 @@ body{
 header{
     width: 100%;
     height: 150px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0px;
 }
 
@@ -29,25 +29,29 @@ header nav{
 .menuHeader{
     margin: 0;
     padding: 0;
+    position: absolute;
 
     
 }
 .menuHeader ul{
     list-style:none;
     display: flex;
-
+    flex: nowrap;
+    background-color: rgb(255, 255, 255);
 }
 .menuHeader li{
     float: left;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .menuHeader li a{
     text-decoration: none;
-    padding: 20px;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    justify-content: center;
+    flex: nowrap;
     color: black;
-    background-color:  white;
+    background-color:  rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px;
@@ -65,26 +69,44 @@ main{
     float: left;
     height: 100vh;
     overflow-y: auto;
-    height: 700px;
+    height: 760px;
+}
+.producto{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    
+
 }
 section{
+    margin-top: 30px;
     padding:10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: justify-around;
 }
+
 section .card-product{
     max-width: 30%;
+    margin: 2px;
+    margin-top: 15px;
     border: 2px solid black;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    
     /*padding-top:10px;*/
+}
+section .card-product:hover{
+    box-shadow: 3px 5px 5px rgb(38, 37, 37);
 }
 section .card-product img{
     max-width: 100%;
     border-radius: 20px 20px 0px 0px;
-    border-bottom: 2px solid rgb(33, 16, 166);
+    border-bottom: 2px solid rgb(191, 191, 194);
 }
 section .card-product .description{
     text-align: center;
@@ -97,14 +119,15 @@ section .card-product .description{
 section .card-product .precio{
     text-align: right;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     letter-spacing: 1px;
     padding-bottom: 10px;
+    border-bottom: 2px solid rgb(184, 184, 190);
 }
 section .card-product-footer{
     width: 100%;
-    background-color: rgb(0, 38, 255);
+    background-color: rgb(255, 255, 255);
     height: 40px;
     border-radius: 0px 0px 18px 18px;
 }
@@ -112,12 +135,16 @@ section .card-product-footer button{
     width: 50%;
     float: left;
     height: 40px;
-    background-color: rgb(0, 38, 255);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     border-radius: 0px 0px 18px 18px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
+}
+section .card-product-footer button:hover{
+    background-color: rgb(113, 113, 113);
+    color: white;
 }
 /**/
 
@@ -165,7 +192,11 @@ aside .form input, aside .form textarea{
     height: 40px;
     font-size: 16px;
     padding: 5px;
+    border-radius: 20px;
     margin-bottom: 10px;
+}
+aside .form input:hover, aside .form textarea:hover{
+border: 2px solid black;
 }
 aside .form textarea{
     height: 100px !important;
@@ -196,9 +227,14 @@ footer .one{
 footer .two{
     float: right;
     text-align: right;
+    
 }
 footer .two a{
     color: rgb(39, 38, 38);
     text-decoration: none;
-    padding-right: 10px4;
+    padding-right: 20px;
+}
+.form button:hover{
+    font-size: 17px;
+    background-color: rgb(77, 59, 240);
 }
