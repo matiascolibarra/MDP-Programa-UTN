@@ -1,6 +1,18 @@
 /*font-family: 'Nanum Myeongjo', serif;
 font-family: 'Playfair Display', serif;
+font-family: 'Turret Road', cursive;
 */
+:root{
+    --firstColor: #FFFFFF;
+    --secondColor: #F6F1F1;
+    --thirdColor: #AFD3E2;
+    --fourthColor: #19A7CE;
+    --fifthColor: #146C94;
+    --sixthColor: #213555;
+}
+
+
+
 
 *{
     margin: 0px;
@@ -9,12 +21,12 @@ font-family: 'Playfair Display', serif;
 }
 
 body{
-    font-family: 'Playfair Display';
+    font-family: 'Turret Road';
 }
 header{
     width: 100%;
     height: 150px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--firstColor);
     margin: 0px;
 }
 
@@ -37,54 +49,57 @@ header nav{
     list-style:none;
     display: flex;
     flex: nowrap;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--firstColor);
 }
 .menuHeader li{
     float: left;
-    margin-top: 50px;
+    margin-top: 50%;
+    margin-right: 40%;
 }
 .menuHeader li a{
     text-decoration: none;
     padding: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
     flex: nowrap;
-    color: black;
-    background-color:  rgb(255, 255, 255);
+    color: var(--sixthColor);
+    background-color:  var(--firstColor);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
 }
 
 .menuHeader li a:hover{
-    color: white;
-    background-color: rgb(85, 83, 79);
+    color: var(--firstColor);
+    background-color: var(--fourthColor);
+    border-radius: 3px;
 }
 
 main{
     clear: both;
     width: 70%;
-    background-color:  #7557fa;
+    background-color:  var(--thirdColor);
     float: left;
-    height: 100vh;
+    height: 122.4vh;
     overflow-y: auto;
-    height: 760px;
+    height: 800px;
 }
 .producto{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 5%;
+    margin-left: 23%;
     padding: 10px;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 48%;
+    border-radius: 5px;
+    background-color: var(--fifthColor);
+    color: var(--firstColor);
     letter-spacing: 3px;
     
-
 }
 section{
-    margin-top: 30px;
+    margin-top: 10px;
     padding:10px;
     display: flex;
     flex-wrap: wrap;
@@ -95,8 +110,8 @@ section .card-product{
     max-width: 30%;
     margin: 2px;
     margin-top: 15px;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 2px solid var(--sixthColor);
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
     /*padding-top:10px;*/
 }
@@ -117,7 +132,7 @@ section .card-product .description{
     font-size: 20px;
 }
 section .card-product .precio{
-    text-align: right;
+    text-align: center;
     font-size: 18px;
     color: rgb(0, 0, 0);
     font-weight: bold;
@@ -127,23 +142,26 @@ section .card-product .precio{
 }
 section .card-product-footer{
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--fourthColor);
     height: 40px;
-    border-radius: 0px 0px 18px 18px;
+    border-radius: 0px 0px 10px 10px;
 }
 section .card-product-footer button{
     width: 50%;
     float: left;
     height: 40px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--fourthColor);
     color: rgb(255, 0, 0);
-    border-radius: 0px 0px 18px 18px;
+    border-radius: 0px 0px 10px 10px;
     border: none;
-    color: rgb(0, 0, 0);
+    font-family: 'Turret Road';
+    font-weight: bold;
+    color: white;
     cursor: pointer;
 }
 section .card-product-footer button:hover{
-    background-color: rgb(113, 113, 113);
+    background-color: var(--fifthColor);
+    font-size: 110%;
     color: white;
 }
 /**/
@@ -152,10 +170,13 @@ section .card-product-footer button:hover{
 
 aside{
     width: 30%;
-    background-color:  #ffffff;
+    background-color: #AFD3E2;
     padding: 20px;
     float: right;
-    height: 108vh;
+    height: 800px;
+}
+aside .productos{
+    color: var(--sixthColor);
 }
 aside section nav ul{
     list-style: none;
@@ -164,35 +185,36 @@ aside section nav ul{
 }
 aside section nav li{
     margin-bottom: 10px;
-    border-bottom: 1px solid rgb(19, 14, 184);
+    border-bottom: 1px solid var(--fifthColor);
 }
 aside section nav a{
     text-decoration: none;
     font-size: 20px;
     padding-bottom: 10px;
-    color: black;
+    color: var(--sixthColor);
 }
 aside section li:hover{
-    border-bottom: 1px solid rgb(210, 70, 70);
+    border-bottom: 1px solid var(--fourthColor);
     color: rgb(80, 23, 202);
 }
 
 aside .form{
     width: 100%;
-    border: 3px solid rgb(80, 59, 174);
+    border: 3px solid var(--fourthColor);
     border-radius: 10px;
     padding: 5px;
 }
 aside .form h2{
     text-align: center;
     padding-bottom: 10px;
+    color: var(--sixthColor);
 }
 aside .form input, aside .form textarea{
     width: 100%;
     height: 40px;
     font-size: 16px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 aside .form input:hover, aside .form textarea:hover{
@@ -206,17 +228,25 @@ aside .form button{
     width: 100%;
     height: 40px;
     cursor: pointer;
-    background-color: rgb(41, 47, 156);
+    background-color:  var(--fourthColor);
     color: white;
     border-radius: 10px;
     font-weight: bold;
+    font-family: 'Turret Road';
 }
+aside .form button:hover{
+    background-color: var(--fifthColor);
+}
+
+
+
+/* FOOTER */
 
 footer{
     clear: both;
     padding: 60px;
-    background-color:  #d8d8dae7;
-    color: rgb(51, 51, 51);
+    background-color:  var(--fifthColor);
+    color: rgb(255, 255, 255);
 }
 footer div{
     width: 50%;
@@ -230,7 +260,7 @@ footer .two{
     
 }
 footer .two a{
-    color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding-right: 20px;
 }
@@ -238,3 +268,21 @@ footer .two a{
     font-size: 17px;
     background-color: rgb(77, 59, 240);
 }
+
+
+/* scrollbar */
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--fourthColor);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondColor);
+    border-radius: 20px;
+    border: 3px solid var(--fifthColor);
+  }
+
+

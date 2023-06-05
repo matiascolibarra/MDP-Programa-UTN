@@ -1,0 +1,68 @@
+/*
+ font-family: 'Libre Baskerville', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Quicksand', sans-serif; 
+*/
+
+:root{
+    --firstColor: #222831;
+    --secondColor: #393E46;
+    --thirdColor: #00ADB5;
+    --fourthColor: #EEEEEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand';
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 30vh;
+    margin: 0;
+    background-color: var(--firstColor);
+    color: var(--fourthColor);
+}
+.overNav{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+}
+.shopName{
+    float: left;
+    padding: 10px;
+    font-size: 30px;
+}
+.overNav input{
+    margin-top: 15px;
+    margin-left: 10%;
+    width: 70%;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+
+.superNav{
+    clear: both;
+    padding: 60px;
+}
+
+.navBar{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: #00ADB5;
+    display: flex;
+}
+.user{
+    float: right;
+}
+
+
