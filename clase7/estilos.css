@@ -1,0 +1,86 @@
+.flex-container{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    /*Solo se usa si tengo display:flex;
+    y es unicamente sobre los contenedores.
+    align-items
+     align-self
+    flex-wrap
+    flex-direction
+    flex-flow
+    justify-content
+    */
+}
+.flex-item{
+    background-color: black;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+.flex-main{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+.flex-main-item1,.flex-main-item2, .flex-main-item3{
+    width: 25%;
+    background-color: bisque;
+    font-size: 50px;
+}
+.flex-main-item2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.flex-one{
+    display: flex;
+    height: 30vh;
+}
+.flex-one .uno{
+    width: 70%;
+    border: 1px solid;
+}
+.flex-one .dos{
+    width: 30%;
+    border: 1px solid;
+
+}
+.flex-dos{
+    display: flex;
+    height: 70vh;
+    border: 1px solid;
+}
+.flex-dos .uno{
+    flex-grow:3 ;
+    border: 2px solid red;
+    order: 3;
+    /* Esto funciona unicamente sobre los items.
+    flex-grow:10 ;
+    order: 1;
+    */
+}
+.flex-dos .dos{
+    flex-grow:10 ;
+    order: 1;
+    border: 2px solid red;
+}
+.flex-dos .tres{
+    flex-grow:6 ;
+    order: 2;
+    border: 2px solid red;
+
+}
+
+/* actividad armar la primera pagina
+ del drive clase 7 */
