@@ -1,0 +1,43 @@
+form{
+    width: 500px;
+    border: 2px solid black;
+}
+.input{
+    position: relative;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid #bebebe;
+}
+input:focus{
+    border: none !important;
+    border-bottom: 3px solid red !important;
+}
+
+::placeholder{
+    color: red;
+    opacity: 80%;
+}
+
+input:invalid{
+    color: red;
+}
+input:valid{
+    color: green;
+    background-color: white !important;
+}
+input:required{
+    background-color:  aquamarine;
+}
+input-icons{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    bottom: 0;
+
+}
