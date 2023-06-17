@@ -1,0 +1,78 @@
+.containter{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: aqua;
+    height: 10vh;
+    width: 100%;
+}
+.footer{
+    background-color: aqua;
+    height: 10vh;
+    width: 100%;
+}
+.main{
+    background-color: red;
+    height: 80vh;
+    width: 100%;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.logo{
+    width: 20%;
+    background-color: aliceblue;
+}
+.menu{
+    width: 80%;
+    background-color:yellow;
+
+}
+
+.main-one{
+    width: 60%;
+    background-color: rgb(56, 10, 112);
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.aside{
+    height: 80vh;
+    width: 40%;
+    background-color: green;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+}
+
+.main-one .item{
+    background-color: brown;
+}
+.main-one .item-one{
+    background-color: blueviolet;
+    grid-area: 3 / 1 / 1 / span 2;
+}
+.aside .item{
+    height: 200px;
+    background-color: chartreuse;
+    width: 100px;
+}
+.footer .one{
+    width: 50%;
+    background-color: black;
+    height: 10vh;
+    margin: 10px;
+}
+.footer .two{
+    margin: 10px;
+    width: 50%;
+    background-color: black;
+    height: 10vh;
+}
+
+
