@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: content-box;
+    box-sizing:border-box;
 }
 
 header{
@@ -139,4 +139,13 @@ header{
     box-sizing: content-box;
 
 }*/
+
+
+
+
+
+
+@media (min-width:768px){
+    aside, main {width: 100%;}
+}
 
